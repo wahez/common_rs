@@ -6,4 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = { version = "4.3.8", features = ["derive"] }
+auditable-info = "0.8.0"
+auditable-serde = "0.7.0"
+chrono = { version = "0.4.38", default-features = false, features = ["clock"]}
+clap = { version = "4.5.20", default-features = false, features = ["derive", "std", "usage", "help"] }
+fast_log = { version = "1.7.4", default-features = false, features = ["runtime_thread"] }
+log = { version = "0.4.22", default-features = false }
+nix = { version = "0.29.0", features = ["process", "signal"], default-features = false }
+serde = { version = "1.0.214", default-features = false, features = ["serde_derive"] }
+serde-xml-rs = { version = "0.6.0", default-features = false }
+serde_with = { version = "3.11.0", default-features = false, features = ["macros"] }
