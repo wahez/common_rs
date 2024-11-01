@@ -1,0 +1,10 @@
+<MyConfig>
+    <CommonConfig>
+        <LogPath>./log</LogPath>
+        <AlertsPath>./log</AlertsPath>
+        <LogChannelSize>10000</LogChannelSize>
+        <LogLevel>DEBUG</LogLevel>
+    </CommonConfig>
+    <InputPath>./input</InputPath>
+    <OutputPath>./output</OutputPath>
+</MyConfig>
